@@ -22,9 +22,11 @@ function App() {
         setIsFiltered={setIsFiltered}
       />
       <Sort currentHogs={currentHogs} setCurrentHogs={setCurrentHogs}></Sort>
-      <Tile currentHogs={currentHogs}>
-        <TileContents currentHogs={currentHogs} />
-      </Tile>
+      <div className="ui grid container">
+        <Tile currentHogs={currentHogs}>
+          <TileContents currentHogs={currentHogs} />
+        </Tile>
+      </div>
     </div>
   );
 }

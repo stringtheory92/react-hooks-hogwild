@@ -7,7 +7,7 @@ function Tile({ currentHogs }) {
   const displayedHogs = currentHogs.map((hog) => {
     return <TileContents hog={hog} key={hog.name} />;
   });
-  return <>{displayedHogs}</>;
+  return <div className="ui 4 wide column">{displayedHogs};</div>;
 }
 
 export default Tile;
