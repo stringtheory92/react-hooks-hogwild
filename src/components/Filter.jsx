@@ -10,7 +10,7 @@ function Filter({
   function handleFilter() {
     setIsFiltered(!isFiltered);
     const filteredHogs = isFiltered
-      ? allHogs.filter((hog) => {
+      ? currentHogs.filter((hog) => {
           console.log("hog.greased: ", hog.greased);
           return hog.greased;
         })
